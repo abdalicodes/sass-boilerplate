@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass scss -o css",
-    "scss:watch": "node-sass --watch scss -o css",
-    "prefix": "postcss css/styles.css --use autoprefixer -o css/styles.prefix.css  --no-map",
-    "prefix:watch": "postcss css/styles.css --use autoprefixer -o css/styles.prefix.css --watch --no-map",
-    "minify": "postcss css/styles.prefix.css --use postcss-minify -o css/styles.mini.css --no-map",
-    "dev": "npm-run-all --parallel scss:watch prefix:watch",
-    "build": "npm-run-all --parallel  scss prefix minify"
+    "scss": "node-sass scss -o build",
+    "scss:watch": "node-sass --watch scss -o build",
+    "prefix": "postcss build/styles.css --use autoprefixer -o build/styles.prefix.css  --no-map",
+    "prefix:watch": "postcss build/styles.css --use autoprefixer -o build/styles.prefix.css --watch --no-map",
+    "minify": "postcss build/styles.prefix.css --use postcss-minify -o build/styles.mini.css --no-map",
+    "dev": "npm-run-all  --parallel scss:watch prefix:watch",
+    "build": "npm-run-all scss prefix minify"
   },
   "keywords": [],
   "author": "",
