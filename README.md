@@ -1,6 +1,6 @@
 ### Scripts
 
-_Take a build of the project with "npm run build" command and then run dev script._
+_First build the project with the "npm run build" command and then run dev script._
 
 1. Take a build
    ```sh
