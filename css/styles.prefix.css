@@ -1,0 +1,108 @@
+/* 
+THis file used to contain all abstracts imports.
+Files inside this folder contain abstract settings, helpers or functions. The have no direct output.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* 
+This file used to contain all base imports,
+Files inside this folder should contains global styles.
+*/
+*, *::before, *::after {
+  padding: 0;
+  margin: 0; }
+
+::-webkit-input-placeholder {
+  background: blanchedalmond; }
+
+:-moz-placeholder {
+  background: blanchedalmond; }
+
+::-moz-placeholder {
+  background: blanchedalmond; }
+
+:-ms-input-placeholder {
+  background: blanchedalmond; }
+
+::-ms-input-placeholder {
+  background: blanchedalmond; }
+
+::placeholder {
+  background: blanchedalmond; }
+
+/* 
+This file used to contain all component imports,
+Files inside this folder should contains styles relating to a reusable component.
+*/
+.container {
+  background: #ff5e58;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #1010bc; }
+  .box:hover {
+    background-color: darkgreen; }
+  @media only screen and (max-width: 600px) {
+    .box {
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 25px 3px #363636;
+         -moz-box-shadow: 0 0 25px 3px #363636;
+              box-shadow: 0 0 25px 3px #363636; }
+      .box:hover {
+        background-color: aquamarine; } }
+
+/* 
+This file used to contain all component imports,
+Files inside this folder should contains styles relating to a reusable component.
+*/
+.container {
+  background: #ff5e58;
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #1010bc; }
+  .box:hover {
+    background-color: darkgreen; }
+  @media only screen and (max-width: 600px) {
+    .box {
+      background-color: #fff;
+      -webkit-box-shadow: 0 0 25px 3px #363636;
+         -moz-box-shadow: 0 0 25px 3px #363636;
+              box-shadow: 0 0 25px 3px #363636; }
+      .box:hover {
+        background-color: aquamarine; } }

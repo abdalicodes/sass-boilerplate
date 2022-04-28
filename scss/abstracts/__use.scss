@@ -1,0 +1,6 @@
+/* 
+    Forward functions, mixins, variables and... to make abstracts available
+    when style is loaded with the @use rule.
+*/
+@forward 'mixins';
+@forward 'variables';

@@ -1,0 +1,8 @@
+footer {
+    @include flex(unset , space-between);
+    width: 100%;
+  
+    &.dark {
+      background: rgba(0,0,0,1);  
+    }
+  }

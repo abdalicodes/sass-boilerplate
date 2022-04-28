@@ -1,0 +1,23 @@
+.container {
+    background: $primary-light;
+    width: 100%;
+    min-height: 100vh;
+    @include flex(center , center);
+
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: $secondary-dark;
+    &:hover {
+        background-color: darkgreen;
+    }
+    @include mobile{
+        background-color: $paper-light;
+        box-shadow: 0 0 25px 3px rgb(54, 54, 54);
+        &:hover{
+            background-color: aquamarine;
+        }
+     }
+
+}

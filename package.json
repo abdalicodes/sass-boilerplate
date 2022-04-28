@@ -1,0 +1,31 @@
+{
+  "name": "scss-structure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass scss -o css",
+    "scss:watch": "node-sass --watch scss -o css",
+    "prefix": "postcss css/styles.css --use autoprefixer -o css/styles.prefix.css  --no-map",
+    "prefix:watch": "postcss css/styles.css --use autoprefixer -o css/styles.prefix.css --watch --no-map",
+    "minify": "postcss css/styles.prefix.css --use postcss-minify -o css/styles.mini.css --no-map",
+    "dev": "npm-run-all --parallel scss:watch prefix:watch",
+    "build": "npm-run-all --parallel  scss prefix minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "> 0%",
+    "last 6 versions"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.4.5",
+    "node-sass": "^7.0.1",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "postcss-minify": "^1.1.0"
+  }
+}

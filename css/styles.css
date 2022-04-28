@@ -1,0 +1,65 @@
+/* 
+THis file used to contain all abstracts imports.
+Files inside this folder contain abstract settings, helpers or functions. The have no direct output.
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+/* 
+This file used to contain all base imports,
+Files inside this folder should contains global styles.
+*/
+*, *::before, *::after {
+  padding: 0;
+  margin: 0; }
+
+::placeholder {
+  background: blanchedalmond; }
+
+/* 
+This file used to contain all component imports,
+Files inside this folder should contains styles relating to a reusable component.
+*/
+.container {
+  background: #ff5e58;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #1010bc; }
+  .box:hover {
+    background-color: darkgreen; }
+  @media only screen and (max-width: 600px) {
+    .box {
+      background-color: #fff;
+      box-shadow: 0 0 25px 3px #363636; }
+      .box:hover {
+        background-color: aquamarine; } }
+
+/* 
+This file used to contain all component imports,
+Files inside this folder should contains styles relating to a reusable component.
+*/
+.container {
+  background: #ff5e58;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #1010bc; }
+  .box:hover {
+    background-color: darkgreen; }
+  @media only screen and (max-width: 600px) {
+    .box {
+      background-color: #fff;
+      box-shadow: 0 0 25px 3px #363636; }
+      .box:hover {
+        background-color: aquamarine; } }
